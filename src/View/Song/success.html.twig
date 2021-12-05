@@ -1,0 +1,27 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="/assets/css/success.css">
+{% endblock %}
+{% block content %}
+<a href="/">
+    <div class="logo_lyrics">
+    </div>
+</a>
+<section class="homepage">
+    <h1 class="slogan"> Congrats ! You guessed all the missing words at Lyrics Break game ! 👏</h1>
+
+    <article class="buttonAgain">
+        <a href="/game" class="start_game pulse"><span>Start again The Breaker ?</span></a>
+        <a href="/" class="start_game pulse"><span>Try The Blindtest ?</span></a>
+    </article>
+
+</section>
+<div class="people_background">
+</div>
+
+{% endblock %}
+{% block javascript %}
+    <script src="/assets/js/confettis.js"></script>
+    <script src="/assets/js/confettisFireworks.js"></script>
+{% endblock %}
